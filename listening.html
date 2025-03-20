@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IELTS Listening Test</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="reading.html">Reading</a>
+            <a href="writing.html">Writing</a>
+            <a href="answers.html">Answers</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Listen to the audio and answer the questions.</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <form id="listeningQuiz">
+            <label>1. What is the main topic of the lecture?</label><br>
+            <input type="text" id="q1"><br>
+
+            <label>2. How long does the event last?</label><br>
+            <select id="q2">
+                <option value="">Select</option>
+                <option value="2 hours">2 hours</option>
+                <option value="3 hours">3 hours</option>
+            </select><br>
+
+            <button type="button" onclick="checkListeningAnswers()">Submit</button>
+        </form>
+        <p id="listeningResult"></p>
+    </main>
+    <script src="script.js"></
