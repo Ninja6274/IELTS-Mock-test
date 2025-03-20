@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IELTS Reading Test</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="listening.html">Listening Test</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Passage: The History of Chocolate</h2>
+        <p>Chocolate has been enjoyed for centuries, originating from the ancient Mayans and Aztecs...</p>
+
+        <form id="readingQuiz">
+            <label>1. The Aztecs used cacao beans as a form of money. (True/False)</label><br>
+            <select id="q3">
+                <option value="">Select</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+            </select><br>
+
+            <label>2. Cadbury and Hershey are major chocolate brands. (True/False)</label><br>
+            <select id="q4">
+                <option value="">Select</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+            </select><br>
+
+            <button type="button" onclick="checkReadingAnswers()">Submit</button>
+        </form>
+        <p id="readingResult"></p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
