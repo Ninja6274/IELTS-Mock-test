@@ -3,35 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading Test</title>
+    <title>IELTS Reading Test</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>IELTS Reading Test</h1>
+        <h1>IELTS Academic Reading Test</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="listening.html">Listening Test</a>
+            <a href="listening.html">Listening</a>
+            <a href="writing.html">Writing</a>
+            <a href="answers.html">Answers</a>
         </nav>
     </header>
     <main>
-        <h2>Passage: The History of Chocolate</h2>
-        <p>Chocolate has been enjoyed for centuries, originating from the ancient Mayans and Aztecs...</p>
+        <h2>Reading Passage</h2>
+        <p>
+            <strong>The History of Chocolate</strong><br>
+            Chocolate has been enjoyed for centuries, originating from the ancient Mayans and Aztecs. 
+            They used cacao beans to create a bitter drink that was believed to have energizing properties. 
+            Over time, chocolate spread to Europe, where sugar was added to create the sweet treat we know today. 
+            The Industrial Revolution allowed mass production, making chocolate widely accessible. 
+            Today, major brands like Cadbury, Hershey, and Lindt dominate the chocolate industry with an ever-growing variety of flavors and forms.
+        </p>
+
+        <h3>Questions</h3>
 
         <form id="readingQuiz">
-            <label>1. The Aztecs used cacao beans as a form of money. (True/False)</label><br>
+            <h4>True / False / Not Given</h4>
+            <label>1. The Mayans used cacao beans to make a sweet chocolate drink.</label><br>
+            <select id="q1">
+                <option value="">Select</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+                <option value="Not Given">Not Given</option>
+            </select><br><br>
+
+            <label>2. Chocolate became popular in Europe before sugar was added.</label><br>
+            <select id="q2">
+                <option value="">Select</option>
+                <option value="True">True</option>
+                <option value="False">False</option>
+                <option value="Not Given">Not Given</option>
+            </select><br><br>
+
+            <label>3. Lindt was one of the first companies to introduce chocolate to Europe.</label><br>
             <select id="q3">
                 <option value="">Select</option>
                 <option value="True">True</option>
                 <option value="False">False</option>
-            </select><br>
+                <option value="Not Given">Not Given</option>
+            </select><br><br>
 
-            <label>2. Cadbury and Hershey are major chocolate brands. (True/False)</label><br>
-            <select id="q4">
-                <option value="">Select</option>
-                <option value="True">True</option>
-                <option value="False">False</option>
-            </select><br>
+            <h4>Fill in the Blanks</h4>
+            <label>4. The ______ and ______ were among the first to use cacao beans.</label><br>
+            <input type="text" id="q4"><br><br>
+
+            <label>5. The industrial revolution allowed for ______ production of chocolate.</label><br>
+            <input type="text" id="q5"><br><br>
 
             <button type="button" onclick="checkReadingAnswers()">Submit</button>
         </form>
